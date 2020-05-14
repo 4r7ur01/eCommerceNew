@@ -1,0 +1,11 @@
+<?php  
+$foto = "imagen.jpg"; 
+$propiedades = GetImageSize("$foto"); 
+$anchura=$propiedades[0]; 
+$altura=$propiedades[1];?> 
+<img src="imagen.jpg" <?php if($anchura > $altura){ 
+echo "width=400";}else{ 
+echo "height=400";}?>>
+
+
+-ajustar el tamaño de diferentes fotos a una de un solo tamaño

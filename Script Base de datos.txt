@@ -1,0 +1,49 @@
+create database tienda;
+use tienda;
+
+create table tblproductos( 
+Id int auto_increment not null,
+nombre varchar(255),
+Precio decimal(20,2),
+Descripcion text,
+Imagen varchar(255));
+
+
+
+create table tblVentas(
+Id int auto_increment not null,
+ClaveTransaccion varchar(250),
+PaypalDatos text,
+Fecha datetime,
+Correo varchar(500),
+Total decimal(60,2),
+Status varchar(200));
+
+create table tbldetalleventas(
+Id int auto_increment not null,
+IdVenta int,
+IdProducto int,
+PrecioUnitario decimal(20,2),
+Cantidad int,
+Descargado int
+);
+
+
+//INSERTAR PRODUCTOS EN LA TABLA PRODUCTOS
+-> SOLO COPIAR EN SUS RESPECTIVOS CAMPOS
+------1-----
+AUTO_INCREMENT (nada)
+EDIPO REY
+250
+Mito de Edipo: rey de Tebas, hijo de Layo y Yocasta, rey y reina de Tebas respectivamente. Un oráculo advirtió a Layo que sería asesinado por su propio hijo. ... Su hijo fue recogido por un pastor y entregado al rey de Corinto, quien le dio el nombre de Edipo (pie hinchado) y lo adoptó como su propio hijo.
+
+------2----------
+AUTO_INCREMENT  (nada)
+EL KAMASUTRA
+502.2
+El Kamasutra es la obra dedicada al amor erótico más famosa y antigua de la India. No se trata, como por lo general se suele creer, de un libro que se refiera exclusivamente a las diversas posturas adoptadas en el acto amoroso.
+
+--------3-----------
+AUTO_INCREMENT  (nada)
+
+
