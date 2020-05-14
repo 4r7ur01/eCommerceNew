@@ -1,4 +1,4 @@
-# COMERCIO ELECTRNOCI
+# COMERCIO ELECTRONICO
 
 # Es una pagina web de comercio electronico muy basico, donde comenze en el aprendisaje de php, mysql
 
